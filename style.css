@@ -243,7 +243,10 @@ footer {
     align-items: center;
   }
 }
-
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 
 
