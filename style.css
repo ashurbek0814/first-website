@@ -35,6 +35,7 @@ nav ul {
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 nav ul li {
@@ -228,6 +229,19 @@ footer {
   margin: 5px 0;
   font-size: 16px;
   color: #666;
+}
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 
