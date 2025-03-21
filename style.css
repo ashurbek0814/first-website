@@ -1,0 +1,235 @@
+/* Общие стили */
+body {
+  background: url('images/fon2.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Шапка */
+header {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: 10px auto;
+  width: 90%;
+  max-width: 1200px;
+  transition: transform 0.3s;
+}
+
+header:hover {
+  transform: scale(1.02);
+}
+
+header h1 {
+  color: #333;
+}
+
+/* Меню */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+nav ul li a:hover {
+  background: #007bff;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Выпадающее меню */
+.menu-container {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.menu-btn {
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.menu-btn:hover {
+  background: #555;
+  transform: scale(1.1);
+}
+
+.dropdown {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: white;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 150px;
+  border-radius: 5px;
+  display: none;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.dropdown li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.dropdown li:hover {
+  background: #f4f4f4;
+}
+
+.menu-container:hover .dropdown {
+  display: block;
+}
+
+/* Блок погоды */
+#weather-widget {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+#weather-widget:hover {
+  transform: scale(1.05);
+}
+
+#weather-widget h2 {
+  font-size: 16px;
+  margin: 0;
+}
+
+#weather-info {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Анимированное приветствие */
+.welcome {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  opacity: 1;
+  animation: fadeOut 3s forwards 2s;
+}
+
+@keyframes fadeOut {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 0;
+      visibility: hidden;
+  }
+}
+
+/* Карточки контента */
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Футер */
+footer {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+ 
+}
+.card {
+  max-width: 900px; /* Ограничение ширины */
+  margin: 0 auto; /* Центрирование блока */
+  padding: 20px; /* Отступы внутри блока */
+  text-align: justify; /* Выравнивание текста */
+}
+.place img {
+  width: 900px; /* Ширина изображения */
+  height: 500px; /* Высота изображения */
+  object-fit: cover; /* Обрезает изображение, чтобы оно заполнило блок */
+  border-radius: 8px; /* Скругленные углы */
+}
+#events {
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.event {
+  background: white;
+  padding: 15px;
+  border-left: 5px solid #007bff;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.event h3 {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.event p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #666;
+}
+
+
+
+
